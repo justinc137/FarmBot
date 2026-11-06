@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AgriBot — Farming Assistant</title>
+  <meta name="description" content="AgriBot: practical farming advice for Nigerian farmers — crops, pests, soil, seasons and markets." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <h2>🌱 AgriBot</h2>
+      <p class="muted">Your practical farming assistant for Nigerian agriculture</p>
+      <hr />
+      <h3>Quick Topics</h3>
+      <ul>
+        <li>Crop planting calendars</li>
+        <li>Fertilizer advice</li>
+        <li>Pest &amp; disease control</li>
+        <li>Soil management</li>
+        <li>Harvest &amp; storage</li>
+        <li>Market tips</li>
+      </ul>
+      <hr />
+      <p><strong>Crops covered:</strong> Maize, Cassava, Rice, Yam, Tomato, Cocoa</p>
+      <button type="button" class="btn-secondary" id="clear">Clear conversation</button>
+    </aside>
+
+    <main class="main">
+      <header class="header">
+        <button type="button" class="menu-toggle" id="menu-toggle" aria-label="Toggle sidebar" aria-controls="sidebar" aria-expanded="false">☰</button>
+        <div>
+          <h1>AgriBot</h1>
+          <p class="muted">Ask me anything about farming in Nigeria</p>
+        </div>
+      </header>
+
+      <div class="suggestions" id="suggestions"></div>
+
+      <section class="chat" id="chat" aria-live="polite"></section>
+
+      <form class="composer" id="composer" autocomplete="off">
+        <input id="prompt" type="text" placeholder="Type your farming question..." aria-label="Your question" required />
+        <button type="submit" class="btn-primary">Send</button>
+      </form>
+    </main>
+  </div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

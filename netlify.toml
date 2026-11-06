@@ -1,0 +1,5 @@
+# AgriBot is served as a static site; the chatbot runs entirely in the browser.
+[build]
+  base = ""
+  publish = "AgriBot/web"
+  command = ""
