@@ -1,0 +1,12 @@
+{
+  "name": "frambot",
+  "version": "1.0.0",
+  "description": "AgriBot / FarmBot — AI-powered farming assistant for Nigerian agriculture",
+  "type": "module",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "dependencies": {
+    "@netlify/functions": "^2.8.2"
+  }
+}
